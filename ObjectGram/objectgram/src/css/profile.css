@@ -1,0 +1,120 @@
+/* Profile page styles */
+body {
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fffbe7;
+    border: 5px dotted #ff4e50;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #f9d42355;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #f9d423;
+    margin-bottom: 18px;
+    background: #fff;
+    object-fit: cover;
+    box-shadow: 0 0 20px #ff4e5055;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #ff4e50;
+    font-weight: bold;
+}
+
+.edit-button {
+    background-color: #ff4e50;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 10px 24px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 8px 12px 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.edit-button:hover {
+    background-color: #f9d423;
+    color: #ff4e50;
+    transform: scale(1.1) rotate(2deg);
+}
+
+.bio {
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #f9d423;
+    margin-bottom: 18px;
+}
+
+.posts-section {
+    margin-top: 24px;
+}
+
+.post-list {
+    margin-top: 24px;
+}
+
+.post-list .post {
+    background: #fff;
+    border: 2px dashed #ff4e50;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 14px;
+    text-align: left;
+    animation: popIn 0.7s;
+}
+
+.post h2 {
+    margin: 0 0 10px;
+}
+
+.post p {
+    margin: 0;
+}
+
+.settings {
+    margin-top: 30px;
+}
+
+.settings h3 {
+    margin-bottom: 10px;
+}
+
+.settings button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings button:hover {
+    background-color: #c82333;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8) rotate(-5deg); opacity: 0; }
+    100% { transform: scale(1) rotate(0); opacity: 1; }
+}

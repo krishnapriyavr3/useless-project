@@ -1,0 +1,123 @@
+/* Funny, playful login styling for ObjectGram */
+
+body {
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#loginForm {
+    background: #fffbe7;
+    border: 5px dashed #ff4e50;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 10px #f9d42355;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    70% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+#loginForm label {
+    font-size: 1.2em;
+    color: #ff4e50;
+    margin-bottom: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    border: 2px solid #f9d423;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 18px;
+    font-size: 1em;
+    background: #fff;
+    transition: border 0.2s;
+}
+
+#loginForm input[type="text"]:focus,
+#loginForm input[type="password"]:focus {
+    border: 2px solid #ff4e50;
+    outline: none;
+    background: #fffbe7;
+}
+
+#loginForm button {
+    background: linear-gradient(90deg, #f9d423, #ff4e50);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #ff4e5055;
+    margin-top: 10px;
+    transition: transform 0.1s;
+}
+
+#loginForm button:hover {
+    transform: scale(1.08) rotate(-2deg);
+    background: linear-gradient(90deg, #ff4e50, #f9d423);
+}
+
+#errorMessage {
+    color: #ff4e50;
+    background: #fff0f0;
+    border: 2px dotted #ff4e50;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    font-size: 1em;
+    display: block;
+    min-height: 24px;
+    text-align: center;
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Add a silly mascot */
+#objectMascot {
+    width: 80px;
+    height: 80px;
+    background: #f9d423;
+    border: 4px solid #ff4e50;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 0 20px #ff4e5055;
+}
+#objectMascot::before, #objectMascot::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+#objectMascot::before {
+    width: 18px; height: 18px;
+    left: 18px; top: 22px;
+}
+#objectMascot::after {
+    width: 18px; height: 18px;
+    right: 18px; top: 22px;
+}

@@ -1,0 +1,66 @@
+body {
+    background: #fffbe7;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+}
+
+#feedContainer {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px #ff4e5055;
+    padding: 20px;
+}
+
+.post {
+    border-bottom: 2px dashed #f9d423;
+    padding: 16px 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.object-name {
+    color: #ff4e50;
+    font-weight: bold;
+}
+
+.post-content {
+    margin: 8px 0;
+}
+
+.post-actions button {
+    background: #f9d423;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 8px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.post-actions button:hover {
+    background: #ff4e50;
+}
+
+.story-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.story {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px dashed #ff4e50;
+    background: #fffbe7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.2rem;
+    cursor: pointer;
+}    

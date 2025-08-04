@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjectGram Feed</title>
+    <link rel="stylesheet" href="css/feed.css">
+</head>
+<body>
+    <header>
+        <h1>ObjectGram Feed</h1>
+        <nav>
+            <a href="profile.html">Profile</a>
+            <a href="chat.html">Chat</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="new-post">
+            <h2>Create a New Post</h2>
+            <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+            <input type="url" id="post-link" placeholder="Share a link (optional)">
+            <button id="post-button">Post</button>
+        </section>
+
+        <section id="feed">
+            <h2>Feed</h2>
+            <div id="posts-container">
+                <!-- Posts will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="stories">
+            <h2>Stories</h2>
+            <input type="file" id="story-upload" accept="image/*,video/*">
+            <button id="upload-story-button">Upload Story</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ObjectGram. All rights reserved.</p>
+    </footer>
+
+    <script src="js/feed.js"></script>
+</body>
+</html>
